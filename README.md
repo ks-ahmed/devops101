@@ -1,6 +1,6 @@
-t# DevOps Learning Journey
+## Why DevOps Documentation is Important:
 
-Welcome to your DevOps learning repository! This repository is designed to track your progress as you navigate through various modules of this DevOps bootcamp. It will serve as a central hub for all your notes, labs, and project work. Use this repository template and let's get started on your journey to becoming a DevOps Engineer!
+Welcome to my DevOps learning repository! This repository is designed to track your progress as you navigate through various modules of this DevOps bootcamp. It will serve as a central hub for all your notes, labs, and project work. Use this repository template and let's get started on your journey to becoming a DevOps Engineer! 
 
 ## Initial setup
 
@@ -14,9 +14,7 @@ This repository is organized into multiple modules, each representing a core are
 
 ## Sample Directory Structure
 
-Here's how your directory structure should look like as you progress through the bootcamp. This is an example of what your repository might look like after completing a few modules:
-
-Example layout for repo only. Yours could be different but this is inspiration. 
+This is an example of what my repository looks like.
 
 ```bash
 devops-learning/
