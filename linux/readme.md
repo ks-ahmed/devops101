@@ -1,4 +1,6 @@
-
+<div align="center">
+<img width="400" alt="DevOps" src="https://media.licdn.com/dms/image/v2/D4E22AQEE6cJQVJudyA/feedshare-shrink_1280/B4EZalFIGdHMAw-/0/1746526308026?e=1750291200&v=beta&t=zr8d9FwxRDdrxiDT8z4JDKs_sl922FVdyngGZDJeuOY" />
+</div>
 
 # What is Linux?  
 
@@ -11,10 +13,10 @@ At its core, Linux offers a powerful command-line interface (CLI) that allows us
 ## Why is Linux Essential?  
 
 - **A Pillar of DevOps:** Linux is at the core of cloud infrastructure, powering the systems behind tools like Docker, Kubernetes, and Jenkins, making it a key player in any DevOps pipeline.
-- **Rock-Solid Security & Stability:** Linux is renowned for its exceptional security features and stability, making it the preferred choice for hosting critical servers across the globe.
+- **Solid Security & Stability:** Linux is renowned for its exceptional security features and stability, making it the preferred choice for hosting servers across the globe.
 - **Open-Source & Flexible:** As an open-source platform, Linux gives you the freedom to fully customize and optimize the system to suit both personal and business needs.
 - **Efficient Automation & Scripting:** With its powerful scripting capabilities, Linux enables the automation of repetitive tasks, a must-have skill.
-- **Superior Networking & Server Performance:** Linux is built to handle networks and servers with unmatched efficiency, whether for small-scale applications or large enterprise infrastructures. 
+- **Networking & Server Performance:** Linux is built to handle networks and servers with unmatched efficiency, whether for small-scale applications or large enterprise infrastructures. 
 
 ---
 
