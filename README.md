@@ -1,5 +1,6 @@
-
-![DevOps Image](https://github.com/user-attachments/assets/d9b90d0b-0ec2-4404-b71f-d4617d8f0883)
+<div align="center">
+<img width="600" alt="DevOps" src="https://media.licdn.com/dms/image/v2/D4E22AQFOSQNm9Qoeuw/feedshare-shrink_1280/B4EZaS79N5HMAk-/0/1746221917244?e=1750291200&v=beta&t=tZRUvuyKgpJRJVjcFN6w7YHVtFTLuNAMgFv1PTiJ-x4" />
+</div>
 
 
 ---
