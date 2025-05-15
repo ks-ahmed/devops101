@@ -1,4 +1,7 @@
 
+https://github.com/user-attachments/assets/c3955692-4fc7-45aa-977c-1e06bb2645fc
+
+---
 
 # Handling Bad Data in Bash:
 This project demonstrates how to handle bad or unexpected input using a combination of conditional logic and input sanitization — all within a Bash script. Perfect for CLI tools, automation tasks, or anytime user input could break your workflow.
