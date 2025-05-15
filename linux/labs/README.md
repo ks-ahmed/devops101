@@ -1,6 +1,10 @@
-# Linux labs
+<div align="center">
+<img width="400" alt="DevOps" src="https://media.licdn.com/dms/image/v2/D4E22AQGRjuySBxClgQ/feedshare-shrink_2048_1536/B4EZZqcuTBHkAw-/0/1745542642565?e=1750291200&v=beta&t=sVjPUMFNFs-lF5zwK908aFwfQtQYB_D1HddEBzyHQms" />
+</div>
 
-𝗚𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗼𝗺𝗳𝗼𝗿𝘁𝗮𝗯𝗹𝗲 𝘄𝗶𝘁𝗵 𝗟𝗶𝗻𝘂𝘅 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀 🚀
+---
+
+# 𝗟𝗶𝗻𝘂𝘅 File 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀 🚀
 
 𝖨𝖿 𝗒𝗈𝗎’𝗋𝖾 𝗐𝗈𝗋𝗄𝗂𝗇𝗀 𝗐𝗂𝗍𝗁 𝖫𝗂𝗇𝗎𝗑, 𝗄𝗇𝗈𝗐𝗂𝗇𝗀 𝗁𝗈𝗐 𝗍𝗈 𝗁𝖺𝗇𝖽𝗅𝖾 𝖿𝗂𝗅𝖾 𝗉𝖾𝗋𝗆𝗂𝗌𝗌𝗂𝗈𝗇𝗌 𝖺𝗇𝖽 𝗈𝗐𝗇𝖾𝗋𝗌𝗁𝗂𝗉 𝗂𝗌 𝗄𝖾𝗒 𝗍𝗈 𝗄𝖾𝖾𝗉𝗂𝗇𝗀 𝗒𝗈𝗎𝗋 𝗌𝗒𝗌𝗍𝖾𝗆 𝗌𝖾𝖼𝗎𝗋𝖾 𝖺𝗇𝖽 𝗋𝗎𝗇𝗇𝗂𝗇𝗀 𝗌𝗆𝗈𝗈𝗍𝗁𝗅𝗒. 🛡️
 
@@ -24,7 +28,3 @@
 
 𝖥𝗈𝗅𝗅𝗈𝗐𝗂𝗇𝗀 𝗌𝗆𝖺𝗋𝗍 𝗁𝖺𝖻𝗂𝗍𝗌—𝗅𝗂𝗄𝖾 𝗀𝗂𝗏𝗂𝗇𝗀 𝗈𝗇𝗅𝗒 𝗍𝗁𝖾 𝗉𝖾𝗋𝗆𝗂𝗌𝗌𝗂𝗈𝗇𝗌 𝗇𝖾𝖾𝖽𝖾𝖽 𝖺𝗇𝖽 𝗋𝖾𝗏𝗂𝖾𝗐𝗂𝗇𝗀 𝗍𝗁𝖾𝗆 𝗋𝖾𝗀𝗎𝗅𝖺𝗋𝗅𝗒—𝗁𝖾𝗅𝗉𝗌 𝗒𝗈𝗎 𝗆𝖺𝗂𝗇𝗍𝖺𝗂𝗇 𝖺 𝗌𝖾𝖼𝗎𝗋𝖾, 𝖾𝖿𝖿𝗂𝖼𝗂𝖾𝗇𝗍 𝗌𝗒𝗌𝗍𝖾𝗆. 𝖳𝗁𝖾 𝗀𝗈𝖺𝗅 𝗂𝗌 𝗍𝗈 𝖿𝗂𝗇𝖽 𝗍𝗁𝖾 𝗋𝗂𝗀𝗁𝗍 𝖻𝖺𝗅𝖺𝗇𝖼𝖾 𝖻𝖾𝗍𝗐𝖾𝖾𝗇 𝗎𝗌𝖺𝖻𝗂𝗅𝗂𝗍𝗒 𝖺𝗇𝖽 𝗌𝖾𝖼𝗎𝗋𝗂𝗍𝗒. 🔒
 
-
-PLEASE WAIT FOR MORE INFO ON lINUX COMMING SOON 
-IT WONT BE TOO LONG!!
-PLEASE HAVE A LOOK!!!!! @CoderCo
