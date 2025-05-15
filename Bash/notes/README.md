@@ -19,23 +19,23 @@ Handling input properly makes your scripts:
 
 ## Example: Clean and Validate a Username:
 
-#!/bin/bash
+`#!/bin/bash`
 
-read -p "Enter a username: " user_input
+`read -p "Enter a username: " user_input`
 
 **Sanitize input: remove spaces and convert to lowercase**
 
-username="${user_input// /}"
-username="${username,,}"
+`username="${user_input// /}"`
+`username="${username,,}"`
 
 **Validate: only allow lowercase alphanumeric, 3–12 characters**
 
-if [[ "$username" =~ ^[a-z0-9]{3,12}$ ]]; then
-    echo "Username accepted: $username"
-else
-    echo "Invalid username. Must be 3–12 characters, lowercase letters or numbers only."
-    exit 1
-fi'
+`if [[ "$username" =~ ^[a-z0-9]{3,12}$ ]]; then` \
+   `echo "Username accepted: $username"` \
+`else` \
+    `echo "Invalid username. Must be 3–12 characters, lowercase letters or numbers only."` \
+    `exit 1` \
+`fi`
 
 ## Tools Used:
 
