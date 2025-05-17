@@ -1,57 +1,28 @@
-![banditOverTheWire](https://github.com/user-attachments/assets/65a6b7fb-c8b5-44ce-b2b0-38194cfa6d63)
+<div align="center">
+<img width="600" src="https://github.com/user-attachments/assets/94c3a93a-bae8-4141-ae3b-156f3f8dfd50" />
+</div>
 
-
-- [🛡️ **Bandit Wargame: An Introduction**](#️-bandit-wargame-an-introduction)
-    - [**How to Get Started**](#how-to-get-started)
-    - [**Connect to the Bandit Server**](#connect-to-the-bandit-server)
 ---
 
-  - [**Level 0 → 1**](#level-0---1)
-    - [📝 Steps:](#-steps)
-  - [**Level 1 → 2**](#level-1---2)
-    - [📝 Steps:](#-steps-1)
-  - [**Level 2 → 3**](#level-2---3)
-    - [📝 Steps:](#-steps-2)
-  - [**Level 3 → 4**](#level-3---4)
-    - [📝 Steps:](#-steps-3)
-  - [**Level 4 → 5**](#level-4---5)
-    - [📝 Steps:](#-steps-4)
-  - [**Level 5 → 6**](#level-5---6)
-    - [📝 Steps:](#-steps-5)
-  - [**Level 6 → 7**](#level-6---7)
-    - [📝 Steps:](#-steps-6)
-  - [**Level 7 → 8**](#level-7---8)
-    - [📝 Steps:](#-steps-7)
-  - [**Level 8 → 9**](#level-8---9)
-    - [📝 Steps:](#-steps-8)
-  - [**Level 9 →  10**](#level-9---10)
-    - [📝 Steps:](#-steps-9)
-  - [**Level 10 → 11**](#level-10---11)
-    - [📝 Steps:](#-steps-10)
-  - [**Level 11 → 12**](#level-11---12)
-    - [📝 Steps:](#-steps-11)
-  - [**Level 12 → 13**](#level-12---13)
+# **Bandit Wargame - An Introduction:**
 
+Bandit Wargame is a great way to dive into the Linux command line, especially if you're just getting started. Created by OverTheWire, it’s a hands-on, challenge-based game that guides you through the basics of working in a shell environment. You’ll learn how to run commands, move around directories, and pick up essential skills—all by solving a series of clever puzzles.
 
+Each level gives you a task: find a hidden password somewhere in the system. Once you uncover it, you’ll use that password to move on to the next level, gradually building your knowledge as you go.
 
+## **How to Get Started:**
 
-# 🛡️ **Bandit Wargame: An Introduction**
+To jump into Bandit, you’ll need to connect to their server using SSH (Secure Shell), which lets you securely access the remote system where the game is hosted.
 
-The **Bandit Wargame** is an excellent starting point for anyone looking to sharpen their Linux command-line skills. Designed by OverTheWire, this game teaches beginners how to interact with a shell environment, use commands effectively, and navigate through directories—all while solving a series of fun and engaging challenges. 
+Here’s what you need to do:
 
-Each level presents a new puzzle where the goal is to find a password hidden somewhere in the system, which you’ll use to access the next level.
-
-### **How to Get Started**
-
-To begin the Bandit game, you need to SSH (Secure Shell) into the Bandit server. SSH allows you to remotely connect to the system running the game. Here’s how to get started:
-
-### **Connect to the Bandit Server**
-Once you have SSH installed, you can connect to the game using the following command in your terminal or SSH client:
+### **Connect to the Bandit Server:**
+First, make sure SSH is installed on your computer. Then, open up your terminal (or use an SSH client) and run this command to connect:
 
 ``` bash
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
-This connects you to the Bandit server as the user bandit0. You’ll then be prompted to enter the password for the first level.
+This command logs you into the Bandit server as the user bandit0. Once you're connected, you'll be asked to enter the password for level 0 to get started.
 
 ### **Password for Level 0**
 The password for the first level (bandit0) is:
@@ -60,175 +31,147 @@ The password for the first level (bandit0) is:
 bandit0
 ```
 
+---
 
-## **Level 0 -> 1**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If</blockquote>
-</details>
+## **Bandit Level 0 → 1**
 
-### 📝 Steps:
+### 💻 Steps:
 1. `ls` to list files.
 2. `cat readme` to read the file.
 
+![bandit0-1](https://github.com/user-attachments/assets/2c60da19-d64a-4f7b-8b86-01b57c966ec2)
+
+
 ---
 
-## **Level 1 -> 2**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>263JGJPfgU6LtdEvgfWU1XP5yac29mFx</blockquote>
-</details>
+## **Bandit Level 1 → 2**
 
-### 📝 Steps:
+### 💻 Steps:
 1. `ls` to list files.
 2. `cat ./-` to read the file named `-`.
 
+![band1-2](https://github.com/user-attachments/assets/69947957-487d-4df4-829b-0fba8fc53e80)
+
+
 ---
 
-## **Level 2 -> 3**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx</blockquote>
-</details>
+## **Bandit Level 2 → 3**
 
-### 📝 Steps:
+### 💻 Steps:
 1. `ls` to list files.
-2. `cat spaces*` to read the file with spaces in its name.
+2. `cat "spaces in the file name"` ("") to read the file with spaces in its name.
+
+![band2-3](https://github.com/user-attachments/assets/c03a8c83-478e-4cc2-b9f7-67093a370d0a)
 
 ---
 
-## **Level 3 -> 4**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ</blockquote>
-</details>
+## **Bandit Level 3 → 4**
 
-### 📝 Steps:
-1. `ls -a` to list all files, including hidden ones.
-2. `cd inhere` to change directory.
-3. `ls -a` to list all hidden files in the new directory.
-4. `cat ...*` to read the hidden file.
+### 💻 Steps:
+1. `ls` to list all files.
+2. `ls -a` to list all hidden files including hidden files.
+3. `cat ...*` to read the hidden file.
+
+![3-4](https://github.com/user-attachments/assets/e8feb46d-4eda-4567-ab89-581d76cbfd45)
+
 
 ---
 
-## **Level 4 -> 5**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw</blockquote>
-</details>
+## **Bandit Level 4 → 5**
 
-### 📝 Steps:
+### 💻 Steps:
 1. `ls` to list files.
 2. `cd inhere` to enter the `inhere` directory.
 3. `file ./*` to identify file types.
 4. `cat ./-file07` to read the specific file.
 
+![band4-5](https://github.com/user-attachments/assets/cce4a0e7-bbdd-4167-ba96-93ac3da2af81)
+
+
 ---
 
-## **Level 5 -> 6**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>HWasnPhtq9AVKe0dmk45nxy20cvUa6EG</blockquote>
-</details>
+## **Bandit Level 5 → 6**
 
-### 📝 Steps:
+### 💻 Steps:
 1. `ls` to list files.
 2. `cd inhere` to enter the directory.
 3. `find . -type f -size 1033c ! -executable` to find the correct file by size.
+4. `cat ..` to open the file
+
+![band5-6](https://github.com/user-attachments/assets/a757f61b-1cb0-4be1-a91c-3a614879b5d8)
+
 
 ---
 
-## **Level 6 -> 7**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj</blockquote>
-</details>
+## **Bandit Level 6 → 7**
 
-### 📝 Steps:
+### 💻 Steps:
 1. `ls -a` to list hidden files.
 2. `find / -type f -user bandit7 -group bandit6 -size 33c 2> /dev/null` to locate the file.
 3. `cat /var/lib/dpkg/info/bandit7.password` to reveal the password.
 
+![band6-7](https://github.com/user-attachments/assets/1c3347f0-0796-4278-a9c0-349e204cfa9c)
+
+
 ---
 
-## **Level 7 -> 8**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc</blockquote>
-</details>
+## **Bandit Level 7 → 8**
 
-### 📝 Steps:
+### 💻 Steps:
 1. `ls -a` to list files.
 2. `cat data.txt` to view the file.
-3. `cat data.txt | grep "millionth"` to filter the content and find the correct line.
+3. `grep "millionth" data.txt` to filter the content and find the correct line.
+
+
+![band 7-8](https://github.com/user-attachments/assets/cc6f04f0-08dd-42dd-90f0-9c17629f2b4a)
+
 
 ---
 
-## **Level 8 -> 9**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>4CKMh1JI91bUIZZPXDqGanal4xvAg0JM</blockquote>
-</details>
+## **Bandit Level 8 → 9**
 
-### 📝 Steps:
-1. `cat data.txt` to view the data.
-2. `sort data.txt | uniq -u` to find the unique line.
+### 💻 Steps:
+1. `ls` to list files.
+2. `cat data.txt` to view the data.
+3. `sort data.txt | uniq -u` to find the unique line.
 
----
+![band8-9](https://github.com/user-attachments/assets/2c5986bf-97f1-479f-844f-26eb4fbc6298)
 
-## **Level 9 -> 10**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey</blockquote>
-</details>
-
-### 📝 Steps:
-1. `cat data.txt | strings | grep "=="` to find the specific line with "==".
 
 ---
 
-## **Level 10 -> 11**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr</blockquote>
-</details>
+## **Bandit Level 9 → 10**
 
-### 📝 Steps:
-1. `cat data.txt | base64 -d` to decode the base64 content.
+### 💻 Steps:
+1. `ls` to list files.
+2. `strings data.txt | grep "=="` to find the specific line with "==".
 
----
+![band9-10](https://github.com/user-attachments/assets/7247f705-25a3-4377-b7f4-984dde8cd9a9)
 
-## **Level 11 -> 12**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4</blockquote>
-</details>
-
-### 📝 Steps:
-1. `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'` to decode using the ROT13 cipher.
-2. 
----
-
-## **Level 12 -> 13**
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4</blockquote>
-</details>
-
-### 📝 Steps:
-1. `xxd -r data.hex data.bin` to reverse the hex dump and create a binary file.
-2. `file data.bin` to check the file type.
-3. `mv data.bin data.gz`, then `gunzip data.gz` to rename and decompress the file.
-4. `file data`, then `tar -xvf data` to identify and extract the contents from the tar archive.
 
 ---
 
-## **Level 13 -> 14**
+## **Bandit Level 10 → 11**
 
-<details>
-  <summary>🔑 Password</summary>
-  <blockquote>FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn</blockquote>
-</details>
+### 💻 Steps:
+1. `ls` to list files.
+2. `cat data.txt | base64 -d` to decode the base64 content.
+
+![band 1-011](https://github.com/user-attachments/assets/ccea4d43-0dbe-41b1-920f-e808e2e09c0c)
+
+
+---
+
+## **Bandit Level 11 → 12**
+
+### 💻 Steps:
+1. `ls` to list files.
+2. `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'` to decode using the ROT13 cipher.
+
+![band 11-12](https://github.com/user-attachments/assets/15ea14b0-dec7-484e-8354-4ca0102ec443)
+
+---
+
 
 
 
