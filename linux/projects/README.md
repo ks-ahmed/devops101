@@ -173,6 +173,37 @@ bandit0
 ---
 
 
+## Command Summary Sheet
+
+A guide to the **Linux commands** I relied on during the above challenge:
+
+### 1. Navigation & File Operations:
+- `ls`: List directory contents.
+- `ls -a`: List all files, including hidden ones.
+- `cd <directory>`: Change the current directory.
+- `cat <filename>`: Display the contents of a file.
+- `cat ./<filename>`: Use `./` to reference a file that starts with special characters (e.g., `-`).
+- `file <filename>`: Determine the file type.
+
+### 2. Searching & Sorting:
+- `find ./<directory> -type f -size <size>`: Search for files of a specific type and size.
+- `find / -user <username> -group <groupname> -size <size>`: Search for files with a specific owner, group, and size.
+- `grep <pattern> <filename>`: Search for lines matching a pattern within a file.
+- `sort <filename>`: Sort the contents of a file.
+- `uniq -u`: Filter and display only the unique lines from sorted output.
+
+### 3. Secure Shell (SSH):
+- `ssh <username>@<hostname> -p <port>`: Connect to a remote server via SSH using a specific username and port.
+
+### 4. Data Manipulation:
+- `strings <filename>`: Extract human-readable strings from binary data.
+- `base64 -d <filename>`: Decode base64-encoded data.
+- `tr 'A-Za-z' 'N-ZA-Mn-za-m'`: Use the `tr` command to translate characters, such as decoding ROT13-encoded text.
+
+### 5. Redirection & Suppression:
+- `2>/dev/null`: Redirect error messages to suppress them from being displayed.
+
+
 
 
 
