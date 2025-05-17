@@ -6,18 +6,19 @@
 
 # **Bandit Wargame - An Introduction:**
 
-Bandit Wargame is a great way to dive into the Linux command line, especially if you're just getting started. Created by OverTheWire, it’s a hands-on, challenge-based game that guides you through the basics of working in a shell environment. You’ll learn how to run commands, move around directories, and pick up essential skills—all by solving a series of clever puzzles.
+Bandit Wargame is a great way to dive into the Linux command line, especially if you're willing to take your command-line skills to the next level. 
+Created by OverTheWire, it’s a hands-on, challenge-based game that guides you through the interaction in a shell environment. You’ll learn how to run commands, move around directories, and pick up essential skills—all by solving a series of clever puzzles.
 
 Each level gives you a task: find a hidden password somewhere in the system. Once you uncover it, you’ll use that password to move on to the next level, gradually building your knowledge as you go.
 
 ## **How to Get Started:**
 
-To jump into Bandit, you’ll need to connect to their server using SSH (Secure Shell), which lets you securely access the remote system where the game is hosted.
+To jump into Bandit, you’ll need to connect to their server using SSH (Secure Shell), which allows you securely access the remote system where the game is hosted.
 
 Here’s what you need to do:
 
 ### **Connect to the Bandit Server:**
-First, make sure SSH is installed on your computer. Then, open up your terminal (or use an SSH client) and run this command to connect:
+First, make sure SSH is installed on your computer, open up your terminal (or use an SSH client) and run this command to connect:
 
 ``` bash
 ssh bandit0@bandit.labs.overthewire.org -p 2220
