@@ -1,38 +1,51 @@
-![](images/BASH%20ARENA.avif)
+<div align="center"> 
+<img width="700" src="https://i.ytimg.com/vi/AdNXaI0Qx3A/maxresdefault.jpg" />
+</div>
 
-# LEVEL 1
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level1.sh)*
+---
+
+## Bash Battle Arena Challenge: 
+
+Bash Battle Arena is a collection of hands-on scripting challenges crafted to test and **strengthen your Bash skills**.
+
+These exercises are designed to reinforce core Bash scripting concepts and help you build a strong foundation for tackling real-world automation tasks.
+
+---
+
+## Level 1: 
+### The Mission
+Create a directory named **Arena** and then inside it, create three files: **warrior.txt**, **mage.txt**, and **archer.txt**. List the contents of the **Arena** directory.
 
 - `mkdir Arena`: Creates the Arena directory.
 - `cd Arena`: Moves into the Arena directory
 - `touch warrior.txt mage.txt archer.txt`: Creates three files: warrior.txt, mage.txt, and archer.txt.
 - `ls`: Lists the files in the Arena directory.
 
+
+https://github.com/user-attachments/assets/584c5e20-3b7a-45a5-8e92-c07c22e28e87
+
 ---
-![](images/level1.png)
 
-# LEVEL 2
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level2.sh)*
+## Level 2:
+### The Mission
+Create a script that outputs the numbers 1 to 10, one number per line.
 
-- `for i in {1..10}; do`: This creates a loop that starts at 1 and increments up to 10.
+
+- `for number in {1..10}; do`: This creates a loop that starts at 1 and increments up to 10.
   - `{1..10}`: Defines the range of numbers for the loop.
 
-- `echo "$i"`: Inside the loop, each number (from 1 to 10) is printed on a new line.
-  - `$i` holds the current number in the loop.
+- `echo "Number: $number"`: Inside the loop, each number (from 1 to 10) is printed on a new line.
+  - `$number` holds the current number in the loop.
 
 - `done`: This marks the end of the loop.
 
+https://github.com/user-attachments/assets/3637dea4-2d23-45fe-819d-3079b98098f6
+
 ---
 
-This script outputs the numbers 1 through 10, with each number printed on a new line.
-
-![](images/level2.png)
-
-
-
-
-# LEVEL 3
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level3.sh)*
+## Level 3: 
+## The Mission
+Write a script that checks if a file named **hero.txt** exists in the **Arena** directory. If it does, print **Hero found!**; else, print **Hero missing!**.
 
 - `if [ -f "./Arena/hero.txt" ]; then`: This checks if the file `hero.txt` exists in the `Arena` directory.
   - `-f` checks if the file exists and is a regular file.
@@ -41,34 +54,32 @@ This script outputs the numbers 1 through 10, with each number printed on a new 
 
 - `else echo "Hero missing!"`: If `hero.txt` is not found, the script prints "Hero missing!".
 
+
+https://github.com/user-attachments/assets/0af905f7-a3ac-4409-835d-af37ef64508a
+
 ---
 
-This script effectively checks for the existence of `hero.txt` and provides appropriate feedback based on whether the file is found or not.
 
-![](images/level3.png)
-
-
-# LEVEL 4
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level4.sh)*
+## Level 4: 
+### The Mission
+Create a script that copies all **.txt** files from the **Arena** directory to a new sirectory called **Backup**.
 
 - `mkdir backup`: This creates a new directory called `backup`.
   - This directory will be used to store all `.txt` files copied from the current directory.
 
-- `cp ./*.txt ./backup/`: This command copies all `.txt` files from the current directory into the `backup` directory.
+- `cp Arena/*.txt ./backup/`: This command copies all `.txt` files from the current directory into the `backup` directory.
   - `./*.txt`: Specifies all `.txt` files in the current directory.
   - `./backup/`: This is the target directory where the `.txt` files will be copied.
 
+
+https://github.com/user-attachments/assets/8beca4b2-5322-4e9d-9805-a89ed6844bfd
+
+
 ---
 
-This script successfully creates a new directory called `backup` and copies all `.txt` files into it.
-
-
-![](images/level4.png)
-
-
-
-# LEVEL 5: 
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level5.sh)*
+## Level 5: 
+### The Mission
+Combine from above! Write a script that: 
 
 - `mkdir Battlefield`: Creates a `Battlefield` directory for files.
   
@@ -87,8 +98,14 @@ This script successfully creates a new directory called `backup` and copies all 
 - `ls ./Archive`: Verifies `knight.txt` is now in `Archive`.
 
 
-# LEVEL 6
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level6.sh)*
+https://github.com/user-attachments/assets/1462239c-bd99-443b-9d15-c656401ddff3
+
+
+---
+
+## Level 6: 
+### The Mission
+Write a script that accepts a filename as an argument and prints the number of lines in that file. If no filename is provided, display a message saying 'No file provided'.
 
 - `FILE="$1"`: This saves the first argument (the filename) passed to the script into the `FILE` variable.
 
@@ -105,36 +122,22 @@ This script successfully creates a new directory called `backup` and copies all 
 - `else echo "No file provided"`: If the user didn't provide a filename, the script will print "No file provided".
 
 
+https://github.com/user-attachments/assets/f52514e0-7865-4f38-9a58-be8e4de761ed
 
 
-![](images/level6.png)
+---
 
-# LEVEL 7 
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level7.sh)*
+## Level 7: 
+### The Mission
+Write a script that sorts all .txt files in a directory by their size, from smallest to largest, and displays the sorted list.
+
 - `ls -lh`: the file size is displayed in a human-readable format. 
 - This option shows sizes in KB, MB, etc., but it **doesn't actually sort the files based on their size.**
 
 - `awk '{print $5, $9}' `: extracts the 5th (file size) and 9th column (file name) ONLY from the ls -l output, which are the file size and file name respectively.
 
 
-![](images/level7.png)
+https://github.com/user-attachments/assets/76c44f19-ffc1-48c3-94d6-71ed73e7f6f0
 
-Please note these files are empty - hence the size :) 
 
-# LEVEL 8
-
-*see the completed Bash script [here](./bash%20battle%20arena/Arena/level8.sh)*
-
-- `if [ -z "$1" ];`: This checks if the user has provided a word or phrase to search for.
-  - If no word is provided, the script shows an error message and exits.
-
-- `grep -l "$1" *.log > /dev/null`: 
-  - This searches for the word (`$1`) in all `.log` files.
-  - `-l` lists the names of the files that contain the word.
-  - `> /dev/null` hides the actual results, so only the file names are handled by the script.
-
-- `if [ $? -eq 0 ];`: This checks the result of `grep`.
-  - If the word is found, it prints "Found the word".
-  - If no files contain the word, it prints "Unable to find the word".
-
-![](images/level8.png)
+---
