@@ -121,7 +121,7 @@ Write a script that accepts a filename as an argument and prints the number of l
 
 - `else echo "No file provided"`: If the user didn't provide a filename, the script will print "No file provided".
 
-**Before the script is able to run; I have to change the files permission settings using `chmod` so that the file is exectuable.**
+**Before the script is able to run; I have to change the files permission settings using `chmod` so that the file is executable.**
 - I used `chmod 774` : 7 = the files **user** is able to read, write and execute(7) - alongside the **group**(7) however the **others** only has the abilty to read(4).
 
 https://github.com/user-attachments/assets/f52514e0-7865-4f38-9a58-be8e4de761ed
@@ -139,7 +139,7 @@ Write a script that sorts all .txt files in a directory by their size, from smal
 
 - then using piping; wrote the following script: `awk '{print $5, $9}' ` which extracts the 5th (file size) and 9th column (file name) ONLY from the ls -l output, which are the file size and file name respectively. The **awk** used to scan the pattern in the respective file.
 
-**Before the script is able to run; I have to change the files permission settings using `chmod` so that the file is exectuable.**
+**Before the script is able to run; I have to change the files permission settings using `chmod` so that the file is executable.**
 - I used `chmod 774` : 7 = the files **user** is able to read, write and execute(7) - alongside the **group**(7) however the **others** only has the abilty to read(4).
 
 https://github.com/user-attachments/assets/76c44f19-ffc1-48c3-94d6-71ed73e7f6f0
