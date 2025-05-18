@@ -7,6 +7,12 @@
 
 nslookup (short for name server lookup) is a effective command-line tool that lets you query DNS to find the IP address associated with a domain name—or vice versa.
 
+
+
+https://github.com/user-attachments/assets/7a9f9665-d7cb-46c3-bce0-7f4c0fdf4509
+
+---
+
 1. Server: 127.0.0.53
   - This indicates that your local system is querying the DNS server at the IP address 127.0.0.53. This is typically a local DNS resolver, often used in systems that have DNS        caching or are using systemd-resolved in Linux distributions.
 
@@ -26,14 +32,21 @@ nslookup (short for name server lookup) is a effective command-line tool that le
   - This is the IPv6 address for google.com, a newer version of IP addresses that allows for a larger number of unique addresses compared to IPv4.
 
 
-## Use Cases for nslookup:
-  . Verify if a domain is resolving properly: Quickly check if DNS is working for a given domain.
-  . Identify the DNS server being used: Useful for diagnosing local DNS configuration issues.
-  . Test external DNS servers: You can specify a custom DNS server by adding it after the domain:
+## Advantages: 
+  - Verify if a domain is resolving properly: Quickly check if DNS is working for a given domain.
+  - Identify the DNS server being used: Useful for diagnosing local DNS configuration issues.
+  - Test external DNS servers: You can specify a custom DNS server by adding it after the domain:
 
+---
 
 ## Tool 2: dig (Domain Information Groper)
 dig is a more advanced tool for querying DNS, offering greater detail and flexibility than nslookup. It's widely used by network engineers for in-depth DNS analysis.
+
+
+
+https://github.com/user-attachments/assets/b6255f35-b61d-401d-b3a4-bc735338abec
+
+---
 
 1. The dig command queried for the IPv4 address of google.com and received the address 142.250.200.46.
 
@@ -41,7 +54,7 @@ dig is a more advanced tool for querying DNS, offering greater detail and flexib
 
 3. The A record (IPv4 address) for google.com was returned with a TTL of 58 seconds, meaning the result is valid for 58 seconds before it needs to be refreshed.
 
-## key advantages of using dig for network troubleshooting:
+## Advantages:
 
 1. Detailed Output:
   - Unlike nslookup, dig provides more detailed information, including query time, server used, and response sections (like the Answer, Authority, and Additional sections). This     helps in diagnosing DNS issues more thoroughly.
@@ -64,65 +77,98 @@ dig is a more advanced tool for querying DNS, offering greater detail and flexib
 7. Scriptable:
   - Since dig outputs data in a machine-readable format, it can be easily used in scripts for automated DNS checks or monitoring.
 
-## Summary:
-Whether you're just starting out or diving deep into network troubleshooting, mastering nslookup and dig can save you hours of head-scratching. Use nslookup when you need a fast, readable answer. Use dig when you need the full picture.
-
-## Pro Tip: 
-Combine these tools with traceroute or ping to get an even clearer understanding of where your network issues might lie.
-
-
+---
 
 ## Tool 3: ping – Connectivity & Latency Checker
 ping is used to test if a target host is reachable and how long it takes for packets to travel to it and back (round-trip time).
 
 
+https://github.com/user-attachments/assets/f4ca2f90-f30f-41fc-a9cb-d90b25cabe2d
 
-🛠️ Use Cases
-Verify if a host or server is online
+---
 
-Measure network latency
+1. Initiation – Send ICMP Echo Requests:
+  - When you run the ping command, your computer sends a series of ICMP (Internet Control Message Protocol) Echo Request packets to the target host (e.g., google.com or an IP address).
 
-Identify packet loss or high latency, which may suggest issues in your connection
+2. Response – Await ICMP Echo Replies
+  - If the target host is reachable and configured to respond to ICMP, it replies with ICMP Echo Reply packets.
+      - If replies are received: the host is online.
+      - If no replies are received: the host may be down, unreachable, or blocking ICMP.
 
-⚠️ Note: Some servers block ICMP ping requests (e.g., ping google.com may not always succeed).
+3. Latency Measurement – Track Round-Trip Time
+  - Each successful reply includes a time value, showing how long (in milliseconds) it took for the packet to travel to the host and back.
+      - Low time = fast connection
+      - High time = possible congestion or delay
+
+4. Packet Loss Analysis
+  - ping shows how many packets were sent and received. From this, it calculates packet loss.
+      - 0% loss = ideal
+      - Any loss = potential network instability
 
 
+## Advantages of Using ping:
+  - Quickly verifies connectivity to a server or device.
+  - Measures network latency (how fast packets travel).
+  - Detects packet loss, helping identify unstable connections.
+  - Simple to use, available by default on most OS platforms.
+  - Lightweight and fast, with minimal overhead.
+  - Helps isolate issues (e.g., unreachable host vs. DNS issue).
+
+
+`⚠️ Note: Some servers block ICMP ping requests (e.g., ping google.com may not always succeed).`
+
+---
 
 ## Tool 4: traceroute – Trace Network Path
 traceroute (or tracert on Windows) helps you understand the route your data takes across the internet, hop by hop.
 
 
-### Output Breakdown:
-Each hop represents a router the packet travels through.
 
-Shows IP addresses and latency times at each hop.
+https://github.com/user-attachments/assets/1a7ec9a7-fca9-4df2-ae29-92d793705887
 
-Helps locate where delays or failures occur.
+---
 
-### Use Cases:
-Diagnose network routing issues
+1. Send Probing Packets with Increasing TTL
+  - traceroute sends packets with a gradually increasing Time-To-Live (TTL) value, starting from 1. Each hop along the path reduces TTL by 1.
 
-Identify where slowdowns are happening (e.g., at your ISP or further downstream)
+2. Receive ICMP "Time Exceeded" Responses
+  - When a packet's TTL expires at a router, that router sends back a "Time Exceeded" ICMP message, revealing its IP and latency.
 
-Detect unreachable hops or firewalls
+3. Repeat Until Destination Is Reached
+  - The process continues until the packet reaches the final destination, which replies with a different ICMP message (or completes the route).
 
+4. Record Each Hop’s IP Address and Response Time
+  - traceroute displays the path the packet takes, hop-by-hop, including the IP addresses and response times for each router.
+
+## Advantages of Using traceroute:
+  - Maps the exact path data takes from your device to the destination.
+  - Identifies slow or failing hops (routers with high latency or no response).
+  - Pinpoints where network issues occur, such as timeouts or routing failures.
+  - Helps differentiate local vs. remote issues (e.g., home router vs. ISP vs. destination server).
+  -  Visualizes network performance, useful for diagnostics and reporting.
+    
 ---
 
 ## Summary Table
 
-Tool	Purpose	Best For:
-nslookup -	Basic DNS lookup	Quick checks of IP/domain mapping
-dig	- Advanced DNS query	Detailed DNS troubleshooting
-ping - Connectivity check	Checking if a host is reachable
-traceroute	- Trace path of data across network	Finding slow or failed hops
+**nslookup** -	Basic DNS lookup	Quick checks of IP/domain mapping
+**dig**	- Advanced DNS query	Detailed DNS troubleshooting
+**ping** - Connectivity check	Checking if a host is reachable
+**traceroute**	- Trace path of data across network	Finding slow or failed hops
 
-## Pro Tips
-Use ping and traceroute together: ping tells you if a host is reachable, traceroute shows where the path is breaking.
+---
 
-Use dig instead of nslookup for scripting or detailed inspection.
+## Crucial Tips:
 
-Combine DNS and network tools to diagnose issues more effectively.
+1. Use ping and traceroute together: ping tells you if a host is reachable, traceroute shows where the path is breaking.
+2. Use dig instead of nslookup for scripting or detailed inspection.
+3. Combine DNS and network tools to diagnose issues more effectively.
+
+---
 
 ## Example Workflow:
-A website is not loading. First, use ping to check reachability. \
-If it fails, try traceroute to locate the failure point. If it loads slowly or incorrectly, use nslookup or dig to verify the DNS is resolving correctly.
+
+A website is not loading. \
+First, use ping to check reachability. \
+If it fails, try traceroute to locate the failure point. \
+If it loads slowly or incorrectly, use nslookup or dig to verify the DNS is resolving correctly.
