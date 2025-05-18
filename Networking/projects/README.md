@@ -94,7 +94,7 @@ https://github.com/user-attachments/assets/f4ca2f90-f30f-41fc-a9cb-d90b25cabe2d
 ---
 
 1. Initiation – Send ICMP Echo Requests:
-  - When you run the ping command, your computer sends a series of ICMP (Internet Control Message Protocol) Echo Request packets to the target host (e.g., google.com or an IP address).
+  - When you run the ping command, your computer sends a series of ICMP (Internet Control Message Protocol) Echo Request packets to the target host **(from our example google.com with its IP address 216.58.204.78)**
 
 2. Response – Await ICMP Echo Replies
   - If the target host is reachable and configured to respond to ICMP, it replies with ICMP Echo Reply packets.
@@ -143,7 +143,7 @@ https://github.com/user-attachments/assets/1a7ec9a7-fca9-4df2-ae29-92d793705887
 3. Repeat Until Destination Is Reached
   - The process continues until the packet reaches the final destination, which replies with a different ICMP message (or completes the route).
 
-4. Record Each Hop’s IP Address and Response Time
+4. Record Each Hop’s IP Address and Response Time. **(from our example google.com with its first hope IP address 142.250.200.14)**
   - traceroute displays the path the packet takes, hop-by-hop, including the IP addresses and response times for each router.
 
 ## Advantages of Using traceroute:
@@ -157,10 +157,10 @@ https://github.com/user-attachments/assets/1a7ec9a7-fca9-4df2-ae29-92d793705887
 
 ## Summary Table
 
-**nslookup** -	Basic DNS lookup	Quick checks of IP/domain mapping
-**dig**	- Advanced DNS query	Detailed DNS troubleshooting
-**ping** - Connectivity check	Checking if a host is reachable
-**traceroute**	- Trace path of data across network	Finding slow or failed hops
+  - **nslookup** -	Basic DNS lookup	Quick checks of IP/domain mapping
+  - **dig**	- Advanced DNS query	Detailed DNS troubleshooting
+  - **ping** - Connectivity check	Checking if a host is reachable
+  - **traceroute**	- Trace path of data across network	Finding slow or failed hops
 
 ---
 
