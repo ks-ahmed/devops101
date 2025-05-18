@@ -48,11 +48,17 @@ https://github.com/user-attachments/assets/b6255f35-b61d-401d-b3a4-bc735338abec
 
 ---
 
-1. The dig command queried for the IPv4 address of google.com and received the address 142.250.200.46.
+1. The dig command queried for the IPv4 address of google.com and received the address 142.250.200.14.
+  - The query made: For the A record (IPv4 address) of google.com.
 
-2. The query was handled by a DNS server at 127.0.0.53 (likely a local resolver), and the response took 17 milliseconds.
+3. The query was handled by a DNS server at 127.0.0.53 Ip address of the local resolver (your router), and the response took 1 milliseconds.
 
-3. The A record (IPv4 address) for google.com was returned with a TTL of 58 seconds, meaning the result is valid for 58 seconds before it needs to be refreshed.
+4. The A record (IPv4 address) for google.com was returned with a TTL of 6 seconds.
+  - google.com. — The domain name queried.
+  - 299 — Time to live (TTL) in seconds. How long this result is valid for before it should be queried again.
+  - IN — Internet class.
+  - A — Type of record (IPv4 address).
+  - 142.250.200.14 — The actual IPv4 address of google.com.
 
 ## Advantages:
 
