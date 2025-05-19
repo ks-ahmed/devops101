@@ -120,6 +120,8 @@ Write a script that accepts a filename as an argument and prints the number of l
 - `echo "The number of lines in this file is : $Num"`: This prints the number of lines in the file.
 
 - `else echo "No file provided"`: If the user didn't provide a filename, the script will print "No file provided".
+  
+- `fi` : ends the if block.
 
 **Before the script is able to run; I have to change the files permission settings using `chmod` so that the file is executable.**
 - I used `chmod 774` : 7 = the files **user** is able to read, write and execute(7) - alongside the **group**(7) however the **others** only has the abilty to read(4).
